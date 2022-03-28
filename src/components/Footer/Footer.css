@@ -1,0 +1,26 @@
+.footer-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container * {
+  color: #fff;
+}
+
+.left {
+  display: flex;
+}
+
+.left > * + * {
+  padding-left: 1rem;
+}
+
+.center {
+  display: flex;
+  gap: 1rem;
+  user-select: none;
+}

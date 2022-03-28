@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lustria&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+.top-text {
+  font-family: Lustria, serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #00aeef;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-bottom: 7.5rem;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub p {
+  font-family: Roboto, serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 85%;
+  padding-top: 7.55rem;
+}
+
+.sub form {
+  min-width: 450px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input {
+  border: #00aeef solid 1px;
+}
+
+input::placeholder {
+  font-family: Roboto, sans-serif, monospace;
+  font-style: italic;
+  color: #21226275;
+}
+
+button {
+  background-color: rgb(50, 138, 189);
+  color: #000000;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .top-text {
+    font-size: 4rem;
+  }
+  .sub p {
+    font-family: Roboto, serif;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 85%;
+    padding-top: 5.55rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .top-text {
+    font-size: 2.5rem;
+  }
+  .sub p {
+    font-family: Roboto, serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 85%;
+    padding-top: 5rem;
+  }
+}

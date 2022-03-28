@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import bgVideo from '../src/Assets/pexels-tima-miroshnichenko-6722163.mp4'
+import Navbar from './components/Header/Navbar';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <div className="overlay"></div>
+      <video autoPlay muted loop id="myVideo">
+        <source src={bgVideo} type="video/mp4" />
+      </video>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
       </header>
-    </div>
+      <main className='main'>
+        <Hero />
+      </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
+    </>
   );
 }
 
