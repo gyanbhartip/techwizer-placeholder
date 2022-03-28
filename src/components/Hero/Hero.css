@@ -2,13 +2,14 @@
 
 .top-text {
   font-family: Lustria, serif;
-  font-size: 6rem;
   text-transform: uppercase;
   color: #00aeef;
   text-align: center;
   margin: 0 auto;
   max-width: 80%;
   padding-bottom: 7.5rem;
+  transition: ease-out 0.25s;
+  font-size: 6rem;
 }
 
 .sub {
@@ -19,8 +20,9 @@
 }
 
 .sub p {
-  font-family: Roboto, serif;
+  transition: ease-out 0.25s;
   font-size: 1.5rem;
+  font-family: Roboto, serif;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -50,16 +52,19 @@ input::placeholder {
 button {
   background-color: rgb(50, 138, 189);
   color: #000000;
+  transition: ease-out 0.25s;
   font-size: 1.25rem;
 }
 
 @media screen and (max-width: 1300px) {
   .top-text {
+    transition: ease-in 0.25s;
     font-size: 4rem;
   }
   .sub p {
+    transition: ease-in 0.25s;
+    font-size: 1.3rem;
     font-family: Roboto, serif;
-    font-size: 1.35rem;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -71,16 +76,22 @@ button {
 
 @media screen and (max-width: 850px) {
   .top-text {
+    transition: ease-in 0.25s;
     font-size: 2.5rem;
   }
   .sub p {
-    font-family: Roboto, serif;
+    transition: ease-in 0.25s;
     font-size: 1.2rem;
+    font-family: Roboto, serif;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     margin: 0 auto;
     max-width: 85%;
     padding-top: 5rem;
+  }
+  button {
+    transition: ease-in 0.25s;
+    font-size: 1rem;
   }
 }
