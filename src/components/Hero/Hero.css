@@ -10,6 +10,7 @@
   padding-bottom: 7.5rem;
   transition: ease-out 0.25s;
   font-size: 6rem;
+  user-select: none;
 }
 
 .sub {
@@ -29,6 +30,7 @@
   margin: 0 auto;
   max-width: 85%;
   padding-top: 7.55rem;
+  user-select: none;
 }
 
 .sub form {
