@@ -1,8 +1,8 @@
 import './App.css';
-import bgVideo from '../src/Assets/pexels-tima-miroshnichenko-6722163.mp4'
-import Navbar from './components/Header/Navbar';
-import Hero from './components/Hero/Hero';
-import Footer from './components/Footer/Footer';
+import bgVideo from '../../Assets/pexels-tima-miroshnichenko-6722163.mp4';
+import Navbar from '../Header/Navbar';
+import Hero from '../Hero/Hero';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
