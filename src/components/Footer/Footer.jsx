@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { GrFacebook } from "react-icons/gr";
+import FBIcon from "../../Assets/facebook.svg";
 
 const Footer = () => {
   return (
@@ -18,7 +18,8 @@ const Footer = () => {
       </div>
       <div className="right">
         <a href="https://www.facebook.com/TechWizer">
-          Follow us on: <GrFacebook style={{ display: "inline" }} />
+          Follow us on:
+          <img src={FBIcon} alt="facebook-logo" className="fb-logo" />
         </a>
       </div>
     </div>

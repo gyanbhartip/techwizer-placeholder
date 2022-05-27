@@ -19,26 +19,29 @@ export const useMcSubscribe = (url) => {
   const [error, setError] = useState(null);
   const [value, setValue] = useState(null);
 
-  const subscribe = useCallback((data) => {
-    const params = toQueryString(data);
-    const newUrl = url + "&" + params;
+  const subscribe = useCallback(
+    (data) => {
+      const params = toQueryString(data);
+      const newUrl = url + "&" + params;
 
-    setError(null);
-    setStatus(Status.loading);
+      setError(null);
+      setStatus(Status.loading);
 
-    jsonp(newUrl, { param: "c" }, (err, data) => {
-      if (err) {
-        setStatus(Status.error);
-        setError(err);
-      } else if (data.result !== "success") {
-        setStatus(Status.error);
-        setError(data.msg);
-      } else {
-        setStatus(Status.success);
-        setValue(data.msg);
-      }
-    });
-  }, []);
+      jsonp(newUrl, { param: "c" }, (err, data) => {
+        if (err) {
+          setStatus(Status.error);
+          setError(err);
+        } else if (data.result !== "success") {
+          setStatus(Status.error);
+          setError(data.msg);
+        } else {
+          setStatus(Status.success);
+          setValue(data.msg);
+        }
+      });
+    },
+    [url]
+  );
 
   return { subscribe, status, error, value };
 };
